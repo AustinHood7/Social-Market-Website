@@ -28,7 +28,6 @@ const LandingPage = () => {
                             </button>
                         </div>
                 </div>
-                
                 <Footer />
             </div>
         </>

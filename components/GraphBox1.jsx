@@ -4,7 +4,7 @@ import React from 'react'
 function GraphBox1(props) {
   return (
     <div className='w-[15vw] h-[30vh] bg-gradient-to-r from-sky-600 to-emerald-600 border rounded-2xl bg-opacity-40 
-    text-sky-100 font-bold text-4xl flex items-center justify-center p-[3%]'>
+    text-sky-100 font-bold text-4xl flex items-center justify-center p-[3%] '>
       {props.sign_up}
     </div>
   )
