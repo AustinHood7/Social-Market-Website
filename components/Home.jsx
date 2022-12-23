@@ -1,7 +1,9 @@
 import LandingPage from '../components/LandingPage'
 import PeopleCard from '../components/PeopleCard'
+import PageFooter from '../components/PageFooter'
 import GraphBox1 from './GraphBox1'
 import { FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Home = () => {
     return (
@@ -52,10 +54,10 @@ const Home = () => {
                         />                
                         <PeopleCard
                             name="PewDiePie"
-                            following="661M"
+                            following="140M"
                             category="Social Media"
                             instagram="21.6M"
-                            twitter="520M"
+                            twitter="520K"
                             youtube="111M"
                             social_equity="TBD"
                             spotify="417K"
@@ -89,13 +91,13 @@ const Home = () => {
                     <div className='h-[70vh]'>
                         <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>How does it work? </div>
                             <div className='flex items-center justify-center text-center'>
-                                <div className='flex-col justify-center text-center'>
+                                <div className='flex-col justify-center text-center '>
                                     <GraphBox1
                                         sign_up="Sign up"
                                     />
                                     <div className='flex w-[15vw] my-5 text-lg font-bold text-center'>Sign up for the Social Market and browse all participating creators</div>
                                 </div>
-                                <div className='m-5 mb-[2%] text-6xl text-sky-900'>
+                                <div className='m-5 mb-[2%] text-6xl text-sky-900 '>
                                     <FaArrowRight/>
                                 </div>
 
@@ -129,8 +131,56 @@ const Home = () => {
                             </div>
                         </div>
                         <hr className='border-sky-900 mt-[3%] border-[1px] rounded-xl w-[80vw] mx-[10vw]'/>
+                        <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>Resources </div>
+                        <div className='flex my-8 justify-evenly'>
+                            <div className='flex-col text-2xl font-bold text-center'>
+                                CBDC
+                                <a href='https://www.federalreserve.gov/central-bank-digital-currency.htm'>
+                                        <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
+                                        transition ease-in-out delay-150'>
+                                            <Image
+                                                src={'/cbdc412x412.png'}
+                                                alt=''
+                                                width={412}
+                                                height={412}
+                                            />
+                                        </div>
+                                </a>
+                            </div>
+
+                            <div className='flex-col text-2xl font-bold text-center'>
+                                Crypto-currency
+                                <a href='https://www.kaspersky.com/resource-center/definitions/what-is-cryptocurrency'>
+                                        <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
+                                        transition ease-in-out delay-150'>
+                                            <Image
+                                                src={'/cryptoSquare.png'}
+                                                alt=''
+                                                width={412}
+                                                height={412}
+                                            />
+                                        </div>
+                                </a>
+                            </div>
+
+                            <div className='flex-col text-2xl font-bold text-center'>
+                                Crypto Market Share
+                                <a href='https://coinmarketcap.com/'>
+                                    <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
+                                    transition ease-in-out delay-150'>
+                                        <Image
+                                            src={'/coinCapSquare.png'}
+                                            alt=''
+                                            width={412}
+                                            height={412}
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
+            <PageFooter />
         </>   
     )
 }
