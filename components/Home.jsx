@@ -1,18 +1,18 @@
 import LandingPage from '../components/LandingPage'
 import PeopleCard from '../components/PeopleCard'
 import PageFooter from '../components/PageFooter'
-import GraphBox1 from './GraphBox1'
-import { FaArrowRight } from 'react-icons/fa';
+import TextBox1 from '../components/TextBox1'
 import Image from 'next/image';
 
 const Home = () => {
     return (
         <>
+        <div className='overflow-hidden'>
             <LandingPage/>
-            <div className='relative z-20 flex justify-center pt-[5vh] bg-white text-sky-900 overflow-hidden'>
-                <div className='flex-col justify-center text-center'>
+            <div className='relative z-20 flex justify-center pt-[5vh] bg-white text-sky-900'>
+                <div className='flex flex-col items-center justify-center text-center'>
                     <span className='text-4xl font-bold'>What is The Social Market? </span>
-                    <div className='mt-10 border md:flex md:justify-evenly bg-gradient-to-r from-sky-600 to-emerald-600'>
+                    <div className='flex items-center justify-center w-full max-w-full mt-10 border maxSm:flex-col md:justify-evenly bg-gradient-to-r from-sky-600 to-emerald-600'>
                         <PeopleCard
                             name="Lebron James"
                             following="206M"
@@ -79,60 +79,46 @@ const Home = () => {
                             src='/charlieSquare.png'
                         />
                     </div>
-                    <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>Take the power back</div>
-                    <div className='md:mx-[25vw] text-center text-2xl bg-opacity-10 border-0 rounded-xl bg-sky-500 p-5 mb-10'>
+                    <div className='my-10 text-4xl font-bold text-center'>Take the power back</div>
+                    <div className='flex text-center text-2xl bg-opacity-10 border-0 rounded-xl bg-sky-500 p-5 mb-10 max-w-[80vw] maxSm:ml-[15vw] mx-[15vw]'>
                         Entertainers from music to online influencers must sign contracts that take 30-80% of their earnings. 
                         The Social Market solves this problem by giving access to a secure, safe, and public market focusing on social equity. 
                         This problem has been around since the entertainment industry existed. Stories of individuals or bands having legal battles over their contract. 
                         Corporations take advantage of small influencers, artists, and musicians and the social market allows all those creators to take back control of their content 
                         and financial decisions. 
                     </div>
-                    <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw] mx-[10vw]'/>
-                    <div className='h-[70vh]'>
-                        <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>How does it work? </div>
-                            <div className='flex items-center justify-center text-center'>
-                                <div className='flex-col justify-center text-center '>
-                                    <GraphBox1
-                                        sign_up="Sign up"
-                                    />
-                                    <div className='flex w-[15vw] my-5 text-lg font-bold text-center'>Sign up for the Social Market and browse all participating creators</div>
-                                </div>
-                                <div className='m-5 mb-[2%] text-6xl text-sky-900 '>
-                                    <FaArrowRight/>
-                                </div>
-
-                                <div className='flex-col justify-center text-center translate-y-[15%]'>
-                                    <GraphBox1
-                                        sign_up="Browse the Social Market"
-                                    />
-                                    <div className='flex w-[15vw] my-5 text-lg font-bold text-center'>See what is on the Social Market and check the Social Equity of your favorite 
-                                    artists</div>
-                                </div>
-                                <div className='m-5 mt-[7%] text-6xl text-sky-900'>
-                                    <FaArrowRight/>
-                                </div>
-
-                                <div className='flex-col justify-center text-center translate-y-[30%]'>
-                                    <GraphBox1
-                                        sign_up="Opt into trading on the market"
-                                    />
-                                    <div className='flex w-[15vw] my-5 text-lg font-bold text-center'>Send a request to be evaluated and become a publically traded figure</div>
-                                </div>
-                                <div className='m-5  mt-[15%] text-6xl text-sky-900'>
-                                    <FaArrowRight/>
-                                </div>
-
-                                <div className='flex-col justify-center text-center translate-y-[45%]'>
-                                    <GraphBox1
-                                        sign_up="Trade or invest on the Social Market"
-                                    />
-                                    <div className='flex  mb-[5%]  w-[15vw] my-5 text-lg font-bold text-center'>Trade or  invest in an individual's equity in the form of crypto-currency</div>
-                                </div>
-                            </div>
+                    <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw]'/>
+                    <div className='my-10 text-4xl font-bold text-center'>How does it work? </div>
+                    <div className='md:h-[70vh] maxSm:flex-col flex text-center justify-center'>
+                        <div className=''>
+                            <TextBox1 
+                                input='Sign up for the Social Market and browse all participating creators'
+                                boxText="Sign up"
+                            />
                         </div>
-                        <hr className='border-sky-900 mt-[3%] border-[1px] rounded-xl w-[80vw] mx-[10vw]'/>
+                        <div className='translate-y-[15%]'>
+                            <TextBox1 
+                                input='See what is on the Social Market and check the Social Equity of your favorite 
+                                artists'
+                                boxText="Browse the Social Market"
+                            />
+                        </div>
+                        <div className='translate-y-[30%]'>
+                            <TextBox1 
+                                input='Send a request to be evaluated and become a publically traded figure'
+                                boxText="Opt into trading on the market"
+                            />
+                        </div>
+                        <div className='translate-y-[45%]'>
+                            <TextBox1 
+                                input='Sign up for the Social Market and browse all participating creators'
+                                boxText="Trade or invest on the Social Market"
+                            />
+                        </div>
+                    </div>
+                        <hr className='border-sky-900 maxSm:mt-[50%] border-[1px] rounded-xl w-[80vw] mx-[10vw]'/>
                         <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>Resources </div>
-                        <div className='flex my-8 justify-evenly'>
+                        <div className='flex my-8 justify-evenly maxSm:flex-col'>
                             <div className='flex-col text-2xl font-bold text-center'>
                                 CBDC
                                 <a href='https://www.federalreserve.gov/central-bank-digital-currency.htm'>
@@ -181,6 +167,7 @@ const Home = () => {
                 </div>
             </div>
             <PageFooter />
+            </div>
         </>   
     )
 }

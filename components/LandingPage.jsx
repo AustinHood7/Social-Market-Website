@@ -6,7 +6,7 @@ const LandingPage = () => {
     return (
         <>
             <div className="flex-col items-center h-screen bg-gradient-to-r from-sky-600 to-emerald-600">
-                <div className='flex'>            
+                <div className='relative z-0'>            
                     <Particle/>
                 </div>
                 <div className='flex justify-center items-center h-[92vh] z-100 relative'>

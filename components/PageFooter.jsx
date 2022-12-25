@@ -14,7 +14,7 @@ function PageFooter() {
                 height={90}
             />
             <a className="mailto" href="mailto:ParkerJoyce@soleindustries.com">
-                <div className='p-6 border-0 bg-gradient-to-r from-sky-600 to-emerald-600 rounded-2xl'>
+                <div className='p-3 border-0 md:p-6 bg-gradient-to-r from-sky-600 to-emerald-600 rounded-2xl maxSm:ml-5'>
                     Send us a message
                 </div>
             </a>
