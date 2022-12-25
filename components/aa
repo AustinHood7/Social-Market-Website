@@ -1,0 +1,27 @@
+                                <div className='translate-y-[15%]'>
+                                    <GraphBox1
+                                        sign_up="Browse the Social Market"
+                                    />
+                                    <div className='flex md:w-[15vw] my-5 text-lg font-bold text-center max-w-[50vw]'>See what is on the Social Market and check the Social Equity of your favorite 
+                                    artists</div>
+                                </div>
+                                <div className='m-5 mt-[7%] text-6xl text-sky-900'>
+                                    <FaArrowRight/>
+                                </div>
+
+                                <div className='translate-y-[30%]'>
+                                    <GraphBox1
+                                        sign_up="Opt into trading on the market"
+                                    />
+                                    <div className='flex md:w-[15vw] my-5 text-lg font-bold text-center max-w-[50vw]'>Send a request to be evaluated and become a publically traded figure</div>
+                                </div>
+                                <div className='m-5 mt-[15%] text-6xl text-sky-900'>
+                                    <FaArrowRight/>
+                                </div>
+
+                                <div className='flex-col justify-center text-center translate-y-[45%]'>
+                                    <GraphBox1
+                                        sign_up="Trade or invest on the Social Market"
+                                    />
+                                    <div className='flex md:w-[15vw] my-5 text-lg font-bold text-center max-w-[50vw]'>Trade or  invest in an individual's equity in the form of crypto-currency</div>
+                                </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function PeopleCard(props) {
   return (
-    <div className='flex-col justify-center items-center w-[20rem] p-5 border-slate-700 border rounded-xl bg-sky-600 m-10 maxSm:ml-[15vw] mx-4 drop-shadow-md'>
+    <div className='flex-col justify-center items-center w-[20rem] p-5 border-slate-700 border rounded-xl bg-sky-600 m-10 mx-[2rem] drop-shadow-md'>
         <div className='flex justify-center'>
             <div className='overflow-hidden border-2 border-slate-700 rounded-[50%] drop-shadow-md'>
                 <Image

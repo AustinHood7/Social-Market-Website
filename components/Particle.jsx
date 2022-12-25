@@ -36,6 +36,10 @@ function Particle() {
             composite: 'destination-out'
           },
           fpsLimit: 120,
+          fullScreen: {
+            enable: true,
+            zIndex: 1,
+          },
           interactivity: {
               events: {
                   onClick: {
