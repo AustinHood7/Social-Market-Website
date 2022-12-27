@@ -11,7 +11,7 @@ function TextBox1(props) {
             />
             <div className='md:w-[15vw] my-5 text-lg font-bold max-w-[50vw] maxSm:mx-[15vw]'>{props.input}</div>
         </div>
-        <div className='m-5 mb-[2%] text-6xl text-sky-900 '>
+        <div className='m-5 mb-[2%] text-6xl text-sky-900'>
             <FaArrowRight/>
         </div>
     </div>

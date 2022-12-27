@@ -10,7 +10,7 @@ const LandingPage = () => {
                     <Particle/>
                 </div>
                 <div className='flex justify-center items-center h-[92vh] z-100 relative'>
-                    <div className='m-0 border-0 rounded-full backdrop-blur-[5rem] maxSm:hidden'>
+                    <div className='m-0 border-0 rounded-full backdrop-blur-[.5rem] maxSm:hidden'>
                             <Image
                                 src='/logo_transparent.png'
                                 alt=''
@@ -19,7 +19,7 @@ const LandingPage = () => {
                             />
                         </div>
                         <hr className='border-sky-500 border-[1px] rounded-lg w-[15rem] mr-10 maxSm:hidden'/>
-                        <div className="text-sky-100 border-0 backdrop-blur-[5rem] rounded-xl p-5 maxSm:ml-[10vw]">
+                        <div className="text-sky-100 border-0 backdrop-blur-[.5rem] rounded-xl p-5 maxSm:ml-[10vw]">
                             <div className="text-2xl">Welcome to <h1 className="font-bold text-8xl">The</h1></div>
                             <h1 className="mt-3 font-bold text-8xl">Social Market</h1>
                             <div className='mt-5 text-2xl text-blue-200'>Creating better opportunities for creators and investors</div>
