@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -15,15 +16,15 @@ const Navbar = () => {
                     <div className="nav">
                         <ul className="md:float-right flex border-0 bg-sky-600 rounded-l-full backdrop-blur-[1rem] bg-opacity-0 items-center justify-center">
                             <li className="mx-3 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue maxSm:text-sm maxSm:mx-1">
-                            <span className="text-sky-100"> Home</span></li>
+                            <span className="text-sky-100"> <Link href="/">Home</Link></span></li>
                             <li className="mx-3 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue maxSm:text-sm maxSm:mx-1">
-                            <span className="text-sky-100"> Info</span></li>
+                            <span className="text-sky-100"> <Link href="/info">Info</Link></span></li>
                             <li className="mx-3 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue maxSm:text-sm maxSm:mx-1">
-                            <span className="text-sky-100"> Resources</span></li>
+                            <span className="text-sky-100"> <Link href="/resources">Resources</Link></span></li>
                             <li className="mx-3 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue maxSm:text-sm maxSm:mx-1">
-                            <span className="text-sky-100"> Company</span></li>
+                            <span className="text-sky-100"> <Link href="/company">Company</Link></span></li>
                             <div className="resumeButton">
-                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-0 maxSm:text-sm maxSm:mx-1 bg-opacity-20 rounded-xl md:flex hover:text-shadow-blue bg-sky-300 text-sky-100">Contact</li>
+                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-0 maxSm:text-sm maxSm:mx-1 bg-opacity-20 rounded-xl md:flex hover:text-shadow-blue bg-sky-300 text-sky-100"><Link href="/contact">Contact</Link></li>
                             </div>
                         </ul>
                     </div>

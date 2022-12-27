@@ -1,7 +1,7 @@
-import LandingPage from '../components/LandingPage'
-import PeopleCard from '../components/PeopleCard'
-import PageFooter from '../components/PageFooter'
-import TextBox1 from '../components/TextBox1'
+import LandingPage from './LandingPage'
+import PeopleCard from './PeopleCard'
+import PageFooter from './PageFooter'
+import TextBox1 from './TextBox1'
 import Image from 'next/image';
 
 const Home = () => {
@@ -89,7 +89,7 @@ const Home = () => {
                     </div>
                     <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw]'/>
                     <div className='my-10 text-4xl font-bold text-center'>How does it work? </div>
-                    <div className='md:h-[70vh] maxSm:flex-col flex text-center justify-center'>
+                    <div className='md:h-[78vh] maxSm:flex-col flex text-center justify-center'>
                         <div className=''>
                             <TextBox1 
                                 input='Sign up for the Social Market and browse all participating creators'
@@ -116,7 +116,7 @@ const Home = () => {
                             />
                         </div>
                     </div>
-                        <hr className='border-sky-900 maxSm:mt-[50%] border-[1px] rounded-xl w-[80vw] mx-[10vw]'/>
+                        <hr className='border-sky-900 maxSm:mt-[50%] border-[1px] rounded-xl w-[80vw] mx-[10vw] mt-5'/>
                         <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>Resources </div>
                         <div className='flex my-8 justify-evenly maxSm:flex-col'>
                             <div className='flex-col text-2xl font-bold text-center'>
