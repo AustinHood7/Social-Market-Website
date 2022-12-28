@@ -81,11 +81,10 @@ const Home = () => {
                     </div>
                     <div className='my-10 text-4xl font-bold text-center'>Take the power back</div>
                     <div className='flex text-center text-2xl bg-opacity-10 border-0 rounded-xl bg-sky-500 p-5 mb-10 max-w-[80vw] maxSm:ml-[15vw] mx-[15vw]'>
-                        Entertainers from music to online influencers must sign contracts that take 30-80% of their earnings. 
-                        The Social Market solves this problem by giving access to a secure, safe, and public market focusing on social equity. 
-                        This problem has been around since the entertainment industry existed. Stories of individuals or bands having legal battles over their contract. 
-                        Corporations take advantage of small influencers, artists, and musicians and the social market allows all those creators to take back control of their content 
-                        and financial decisions. 
+                        With the expansion of digital media over the past decade millions of people see opportunites every day; whether stumbling across an exciting new start-up
+                        , an up and coming musician, new actors in their premier film, or a first-year athlete. Accredited investors are the ony people able to tap into this market.
+                        Allowing the general public access through a public market of TV shows, a new artist album, or a revolutionary new start-up through a public market would allow 
+                        seemingly endless opportunities across the globe. 
                     </div>
                     <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw]'/>
                     <div className='my-10 text-4xl font-bold text-center'>How does it work? </div>
