@@ -10,10 +10,10 @@ function info() {
       <LandingPage2
         info="How does the Social Market work?"  
       />
-      <div className='h-[100vh] flex justify-evenly items-center flex-wrap relative z-100 bg-white'>
+      <div className='relative flex flex-wrap items-center bg-white justify-evenly z-100'>
         <div className='flex items-center justify-center w-full py-10 text-6xl font-bold text-sky-900 '>A deeper look</div>
-        <div className='flex w-full bg-gradient-to-r from-sky-600 to-emerald-600 px-[5vw] justify-evenly py-5 items-center h-[86vh]'>
-          <div className='text-2xl text-sky-100 max-w-[30vw]'>
+        <div className='flex w-full bg-gradient-to-r from-sky-600 to-emerald-600 px-[5vw] justify-evenly py-10 items-center maxSm:flex-col'>
+          <div className='text-2xl text-sky-100 md:max-w-[30vw]'>
               The entertainment industry is worth $2.5 trillion dollars globally up $400 billion since 2018, coupled with the rise of social media millions of people have now become 
               a globally recognizable brand more so than companies.  Social equity has now become one of the most valuable assets in the online world, the Social Market evaluates the 
               social equity, revenue, and other metrics. This social equity value allows a new investment tool to invest in projects like albums, movies, games, or athletics on a globally 
@@ -26,7 +26,7 @@ function info() {
               </ul>
               The entertainment industry is projected to have an annual growth of 13% over the next five years. 
           </div>
-          <div className='text-2xl text-sky-100 max-w-[35vw] mx-[5vw] flex-col'>
+          <div className='text-2xl text-sky-100 md:max-w-[35vw] mx-[5vw] flex-col'>
             Gen-Z / Millennials are investing in the content of 750,000 creators. The Social Market is giving the investors a monetary return for this venture. 
             The increase in interest with investing shows the market is ripe for a new investing platform for the entertainment industry. 
             <div className='my-[2vh]'>
@@ -46,7 +46,53 @@ function info() {
         </div>
       </div>
       <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw] mx-[10vw] '/>
-      <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Under the hood</div>
+      <div className='relative flex flex-col items-center bg-white z-1'>
+        <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Under the hood</div>
+        <div className='text-sky-900 max-w-[75vw] text-xl border-2 border-sky-900 rounded-xl p-[3rem] bg-sky-100'>
+        With the implementation of a Central Bank Digital Currency (CBDC) from the Federal Reserve (Fed) the government understands that a digital market is on the horizon. 
+        Social media has become more of a business enterprise than staying in touch with friends. Social media influencers, artists, movies, tv shows, and athletes are allowing 
+        fans to fund projects with GoFundMe to stock options in the Green Bay Packers. Influencer marketing is now a $2.5 trillion industry, up $400 billion three years ago. 
+        This influencer market has grown on average 146% for the past five years. The entertainment industry is growing annually by 13%. Top creators like Taylor Swift have had 
+        multiple controversies regarding the power of record labels. People want a way to help their favorite entertainers create content. With the entertainment market in a huge 
+        boom due to COVID-19, the multiple controversies with labels taking power away from creators, and alternative investments explosion Sole Industries “The Social Market” 
+        is in the perfect position for filling the market need. 
+        <ul className='my-2'>
+            <li>
+            On Jun 23, 2022, Federal Reserve Chair Powell stated the “Federal Reserve understand the time of a digital market is coming and it’s coming quick.” 
+            This indicates a strong shift dynamic shift to a more digital market within 5-10 years.  
+            </li>
+            <li>
+            On Jun 23, 2022, Chairwomen Waters & the FED recognized the importance a need to decrease volatility of the cryptocurrency market. 
+            The Social Market does exactly that but giving a purpose for CBDC on a custom market
+            </li>
+          </ul>
+          <div className='flex justify-evenly'>
+            <a href='https://www.federalreserve.gov/newsevents/speech/powell20220617a.htm'>
+              <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
+              transition ease-in-out delay-150'>
+                <Image
+                    src={'/powell934-717.png'}
+                    alt=''
+                    width={535}
+                    height={412}
+                />
+              </div>
+            </a>
+            <a href='https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=408969'>
+              <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
+              transition ease-in-out delay-150'>
+                <Image
+                    src={'/watersLg.png'}
+                    alt=''
+                    width={535}
+                    height={412}
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

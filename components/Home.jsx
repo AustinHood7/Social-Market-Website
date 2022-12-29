@@ -117,8 +117,8 @@ const Home = () => {
                     </div>
                         <hr className='border-sky-900 maxSm:mt-[50%] border-[1px] rounded-xl w-[80vw] mx-[10vw] mt-5'/>
                         <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>Resources </div>
-                        <div className='flex my-8 justify-evenly maxSm:flex-col'>
-                            <div className='flex-col text-2xl font-bold text-center'>
+                        <div className='flex mx-4 my-8 justify-evenly maxSm:flex-col'>
+                            <div className='flex-col mx-4 text-2xl font-bold text-center'>
                                 CBDC
                                 <a href='https://www.federalreserve.gov/central-bank-digital-currency.htm'>
                                         <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
@@ -133,7 +133,7 @@ const Home = () => {
                                 </a>
                             </div>
 
-                            <div className='flex-col text-2xl font-bold text-center'>
+                            <div className='flex-col mx-4 text-2xl font-bold text-center'>
                                 Crypto-currency
                                 <a href='https://www.kaspersky.com/resource-center/definitions/what-is-cryptocurrency'>
                                         <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
@@ -148,13 +148,13 @@ const Home = () => {
                                 </a>
                             </div>
 
-                            <div className='flex-col text-2xl font-bold text-center'>
-                                Crypto Market Share
-                                <a href='https://coinmarketcap.com/'>
+                            <div className='flex-col mx-4 text-2xl font-bold text-center'>
+                                CBDC Regional Map
+                                <a href='https://cbdctracker.org/'>
                                     <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
                                     transition ease-in-out delay-150'>
                                         <Image
-                                            src={'/coinCapSquare.png'}
+                                            src={'/cbdcTracker1x1.png'}
                                             alt=''
                                             width={412}
                                             height={412}
