@@ -7,13 +7,12 @@ function info() {
   return (
     <div className='bg-white '>
       <Navbar/>
-      
       <LandingPage2
         info="How does the Social Market work?"  
       />
       <div className='h-[100vh] flex justify-evenly items-center flex-wrap relative z-100 bg-white'>
         <div className='flex items-center justify-center w-full py-10 text-6xl font-bold text-sky-900 '>A deeper look</div>
-        <div className='flex w-full bg-gradient-to-r from-sky-600 to-emerald-600 px-[5vw] justify-evenly py-5 items-center'>
+        <div className='flex w-full bg-gradient-to-r from-sky-600 to-emerald-600 px-[5vw] justify-evenly py-5 items-center h-[86vh]'>
           <div className='text-2xl text-sky-100 max-w-[30vw]'>
               The entertainment industry is worth $2.5 trillion dollars globally up $400 billion since 2018, coupled with the rise of social media millions of people have now become 
               a globally recognizable brand more so than companies.  Social equity has now become one of the most valuable assets in the online world, the Social Market evaluates the 
@@ -46,10 +45,8 @@ function info() {
           </div>
         </div>
       </div>
-      <hr className='border-sky-900 maxSm:mt-[50%] border-[1px] rounded-xl w-[80vw] mx-[10vw] '/>
-      <div className='h-10 bg-white'>
-
-      </div>
+      <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw] mx-[10vw] '/>
+      <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Under the hood</div>
     </div>
   )
 }

@@ -11,17 +11,17 @@ const LandingPage2 = (props) => {
                 </div>
                 <div className='flex justify-center items-center h-[92vh] z-100 relative'>
                     <div className='m-0 border-0 rounded-full backdrop-blur-[.5rem] maxSm:hidden'>
-                            <Image
-                                src='/logo_transparent.png'
-                                alt=''
-                                width={400}
-                                height={400}
-                            />
-                        </div>
-                        <hr className='border-sky-500 border-[1px] rounded-lg w-[15rem] mr-10 maxSm:hidden'/>
-                        <div className="text-sky-100 border-0 backdrop-blur-[.5rem] rounded-xl p-5 maxSm:ml-[10vw] max-w-[25vw]">
-                            <div className='text-6xl font-bold'>{props.info}</div>
-                        </div>
+                        <Image
+                            src='/logo_transparent.png'
+                            alt=''
+                            width={400}
+                            height={400}
+                        />
+                    </div>
+                    <hr className='border-sky-500 border-[1px] rounded-lg w-[15rem] mr-10 maxSm:hidden'/>
+                    <div className="text-sky-100 border-0 backdrop-blur-[.5rem] rounded-xl p-5 maxSm:ml-[10vw] max-w-[25vw]">
+                        <div className='text-6xl font-bold'>{props.info}</div>
+                    </div>
                 </div>
                 <Footer />
             </div>
