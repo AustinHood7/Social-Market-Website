@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Particle from '../components/Particle'
 import Footer from '../components/Footer'
 
-const LandingPage = (props) => {
+const LandingPage = () => {
     return (
         <>
             <div className="flex-col items-center h-screen bg-gradient-to-r from-sky-600 to-emerald-600">
