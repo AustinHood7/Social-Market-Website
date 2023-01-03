@@ -2,12 +2,13 @@ import LandingPage from './LandingPage'
 import PeopleCard from './PeopleCard'
 import PageFooter from './PageFooter'
 import TextBox1 from './TextBox1'
+import BenefitCard from './BenefitCard'
 import Image from 'next/image';
 
 const Home = () => {
     return (
         <>
-        <div className='overflow-hidden'>
+        <div className='w-full overflow-hidden'>
             <LandingPage/>
             <div className='relative z-20 flex justify-center pt-[5vh] bg-white text-sky-900'>
                 <div className='flex flex-col items-center justify-center text-center'>
@@ -116,54 +117,30 @@ const Home = () => {
                         </div>
                     </div>
                         <hr className='border-sky-900 maxSm:mt-[50%] border-[1px] rounded-xl w-[80vw] mx-[10vw] mt-5'/>
-                        <div className='mx-[25vw] text-center my-10 text-4xl font-bold'>Resources </div>
-                        <div className='flex mx-4 my-8 justify-evenly maxSm:flex-col'>
-                            <div className='flex-col mx-4 text-2xl font-bold text-center'>
-                                CBDC
-                                <a href='https://www.federalreserve.gov/central-bank-digital-currency.htm'>
-                                        <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
-                                        transition ease-in-out delay-150'>
-                                            <Image
-                                                src={'/cbdc412x412.png'}
-                                                alt=''
-                                                width={412}
-                                                height={412}
-                                            />
-                                        </div>
-                                </a>
-                            </div>
-
-                            <div className='flex-col mx-4 text-2xl font-bold text-center'>
-                                Crypto-currency
-                                <a href='https://www.kaspersky.com/resource-center/definitions/what-is-cryptocurrency'>
-                                        <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
-                                        transition ease-in-out delay-150'>
-                                            <Image
-                                                src={'/cryptoSquare.png'}
-                                                alt=''
-                                                width={412}
-                                                height={412}
-                                            />
-                                        </div>
-                                </a>
-                            </div>
-
-                            <div className='flex-col mx-4 text-2xl font-bold text-center'>
-                                CBDC Regional Map
-                                <a href='https://cbdctracker.org/'>
-                                    <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
-                                    transition ease-in-out delay-150'>
-                                        <Image
-                                            src={'/cbdcTracker1x1.png'}
-                                            alt=''
-                                            width={412}
-                                            height={412}
-                                        />
-                                    </div>
-                                </a>
-                            </div>
+                        <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Benefits</div>
+                        <div className='py-10 bg-white md:flex justify-evenly'>
+                            <BenefitCard 
+                            title='Users'
+                            info="Users benefit from using this product because they are better able to monitize and own their own online persona.
+                            They can create new products and follow their dreams with the help of supporters and already existing followers"
+                            src='/users.png'
+                            />
+                            <BenefitCard 
+                            title='Investors'
+                            info="Investors can benefit from the creation of this platform by gaining an opportunity to invest directly to their 
+                            favorite content creators and athletes. It is also a great opportunity to invest in individual products, such as an upcoming
+                            album or product"
+                            src='/coins.png'
+                            />
+                            <BenefitCard 
+                            title='Developers'
+                            info="The developers and creators of this product benefit from this by taking a small portion of each transaction similar to how the stock 
+                            market operates and is very small in comparison to record labels or management companies."
+                            src='/developersWhite.png'
+                            />
                         </div>
                 </div>
+                
             </div>
             <PageFooter />
             </div>

@@ -6,6 +6,15 @@ module.exports = {
 ],
   theme: {
     extend: {
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      },
       screens: {
         'maxSm': {'max': '639px'},
       },
@@ -40,8 +49,10 @@ module.exports = {
         'custom': '1fr 1fr 1fr 1fr 1fr 1fr',
         'rows': '1fr 2fr 2fr'
       },
+      variants: {
+        animation: ["motion-safe"]
+    },
     },
   },
-  plugins: [  require('tailwindcss-textshadow')
-],
+  plugins: [  require('tailwindcss-textshadow')],
 }

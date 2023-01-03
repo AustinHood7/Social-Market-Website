@@ -38,7 +38,7 @@ function Particle() {
           fpsLimit: 120,
           fullScreen: {
             enable: true,
-            zIndex: 1,
+            zIndex: -1,
           },
           interactivity: {
               events: {

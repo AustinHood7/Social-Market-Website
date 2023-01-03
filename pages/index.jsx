@@ -4,7 +4,7 @@ import Home from '../components/Home'
 
 function index() {
   return (
-    <div>
+    <div className='w-full'>
       <Navbar />
       <Home />
     </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { FaGithub } from 'react-icons/fa';
 import { AiFillTwitterCircle } from 'react-icons/ai';
