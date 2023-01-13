@@ -3,7 +3,6 @@ import PeopleCard from './PeopleCard'
 import PageFooter from './PageFooter'
 import TextBox1 from './TextBox1'
 import BenefitCard from './BenefitCard'
-import Image from 'next/image';
 
 const Home = () => {
     return (
@@ -134,8 +133,7 @@ const Home = () => {
                             />
                             <BenefitCard 
                             title='Developers'
-                            info="The developers and creators of this product benefit from this by taking a small portion of each transaction similar to how the stock 
-                            market operates and is very small in comparison to record labels or management companies."
+                            info="The developers and creators of this product benefit from this by taking a small portion of each transaction similar to how brokerages operate and is very small in comparison to record labels or management companies."
                             src='/developersWhite.png'
                             />
                         </div>

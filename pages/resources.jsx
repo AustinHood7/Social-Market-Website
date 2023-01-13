@@ -2,6 +2,7 @@ import React from 'react'
 import LandingPage2 from '../components/LandingPage2'
 import Navbar from '../components/Navbar'
 import Image from 'next/image';
+import PageFooter from '../components/PageFooter';
 
 
 function resources() {
@@ -140,6 +141,7 @@ function resources() {
               </div>
           </div>
         </div>
+        <PageFooter/>
     </div>
   )
 }
