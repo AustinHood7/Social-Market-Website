@@ -1,99 +1,105 @@
 import React from 'react'
 import LandingPage2 from '../components/LandingPage2'
 import Navbar from '../components/Navbar'
+import PageFooter from '../components/PageFooter'
 import Image from 'next/image';
 
 function info() {
   return (
-    <div className='bg-white '>
+    <div className='w-full bg-white '>
       <Navbar/>
       <LandingPage2
         info="How does the Social Market work?"  
       />
       <div className='relative flex flex-wrap items-center bg-white justify-evenly z-100'>
-        <div className='flex items-center justify-center w-full py-10 text-6xl font-bold text-sky-900 '>A deeper look</div>
-        <div className='flex w-full bg-gradient-to-r from-sky-600 to-emerald-600 px-[5vw] justify-evenly py-10 items-center maxSm:flex-col'>
-          <div className='text-2xl text-sky-100 md:max-w-[30vw]'>
-              The entertainment industry is worth $2.5 trillion dollars globally up $400 billion since 2018, coupled with the rise of social media millions of people have now become 
-              a globally recognizable brand more so than companies.  Social equity has now become one of the most valuable assets in the online world, the Social Market evaluates the 
-              social equity, revenue, and other metrics. This social equity value allows a new investment tool to invest in projects like albums, movies, games, or athletics on a globally 
-              accessible public trading platform. 
-              <ul className='ml-10 list-disc'>
-                <li>Esports // Video Games ($150 Billion)</li>
-                <li>TV // Film ($380 Billion)</li>
-                <li>Music ($113 Billion)</li>
-                <li>Athletics ($501.5 Billion)</li>
-              </ul>
-              The entertainment industry is projected to have an annual growth of 13% over the next five years. 
-          </div>
-          <div className='text-2xl text-sky-100 md:max-w-[35vw] mx-[5vw] flex-col'>
-            Gen-Z / Millennials are investing in the content of 750,000 creators. The Social Market is giving the investors a monetary return for this venture. 
-            The increase in interest with investing shows the market is ripe for a new investing platform for the entertainment industry. 
-            <div className='my-[2vh]'>
-              <div className='overflow-hidden border rounded-2xl border-slate-700 w-[74%]'>
-                <Image
-                  src={'/marketSize3-2.png'}
-                  alt=''
-                  width={500}
-                  height={330}
+        <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Real Life Scenario</div>
+        <div className='items-center md:flex justify-evenly'>
+        <div className='md:max-w-[25vw] border rounded-xl bg-gradient-to-r from-sky-600 to-emerald-600 flex flex-col p-5 px-10 items-center mx-8'>
+          <h2 className='mb-4 text-4xl text-sky-100'>Phase 1</h2>
+          <Image
+                src='/piano.png'
+                alt=''
+                width={150}
+                height={150}
                 />
-              </div>
-            </div>
-            Paid subscription services like Patreon and Twitch allow a creator's fan base to pay a monthly fee to fuel a creator's content.
-            Approximately 10 million people subscribe to over 750,000 creators who utilize these paid subscriptions as a form of investing in their content. 
-            This is likely a factor to why many people are investing less into the traditional market as the trend presents on the bottom graph. 
-          </div>
+            <ul className='p-0 text-xl text-sky-100'>
+              <li>For this example, a mid-tier musician has asked Sole Industries to appraise a new album project which will cost $100,000. 
+                The artists social equity value came to $1,000,000 and is offering 10% revenue to initial investors. 
+                The price for each social equity share will be $10 (1,000,000 / $100,000).</li>
+              <li className='p-0 mt-4'>Initial prices: 
+                <ul className='p-0 list-disc'>
+                  <li className='p-1 ml-4'>Cost of Project: $100,000</li>
+                  <li className='p-1 ml-4'>Current Social Equity Value: $1,000,000 </li>
+                  <li className='p-1 ml-4'>Price Per Share: $10</li>
+                  <li className='p-1 ml-4'>ROI contract: 10% net revenue paid in dividends quarterly</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <div className='md:max-w-[25vw] border rounded-xl bg-gradient-to-r from-sky-600 to-emerald-600 flex flex-col p-5 px-10 items-center mx-8'>
+          <h2 className='mb-2 text-4xl text-sky-100'>Phase 2</h2>
+          <Image
+                src='/recordIcon.png'
+                alt=''
+                width={150}
+                height={150}
+                />
+            <ul className='p-0 text-xl text-sky-100'>
+              <li>The IPO releases, based on previous notoriety and a dedicated following 100 investors buy up 1000 shares each. (1 investor = $1,000)</li>
+              <li>$96,500 goes to the artist to fund the album. (3.5% fee for Sole Industries)</li>
+              <li className='p-0 mt-4'>The artist releases the album: 
+                <ul className='p-0 list-disc'>
+                  <li className='p-1 ml-4'>Album generates $1 million in sales</li>
+                  <li className='p-1 ml-4'>Increased their following by 1 million people across all platforms</li>
+                  <li className='p-1 ml-4'>Top 25 on the US billboards for 3 weeks</li>
+                  <li className='p-1 ml-4'>Increases streaming listens by 50,000 per month</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <div className='md:max-w-[25vw] border rounded-xl bg-gradient-to-r from-sky-600 to-emerald-600 flex flex-col p-5 px-10 items-center mx-8 pb-14'>
+          <h2 className='mb-2 text-4xl text-sky-100'>Phase 3</h2>
+            <Image
+              src='/money2.png'
+              alt=''
+              width={150}
+              height={150}
+            />
+            <ul className='p-0 text-xl text-sky-100'>
+              <li>From the success of the album release their social equity share price has increased from $10 per share to $35 per share.</li>
+              <li>Investors are given 10% of the revenue generated from sales at the end of the quarter.</li>
+              <li className='p-0 mt-4'>Initial investors returns: 
+                <ul className='p-0 list-disc'>
+                  <li className='p-1 ml-4'>Initial investors sell their shares for $3,500</li>
+                  <li className='p-1 ml-4'>$1,000 for the 10% revenue was paid out </li>
+                  <li className='p-1 ml-4'>Total Profit: $4,500 from a $1,000 investment</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        </div>
+        <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw] mt-10'/>
+        <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Mockup</div>
+        <div className='overflow-hidden border-2 rounded-xl border-sky-600'>
+          <a href='https://www.figma.com/proto/Fh14LSDAXdrvdoqWVeUAyd/Sole-Mockup-V4?node-id=1%3A17&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A16' target="_blank">
+            <Image
+              src='/mockup2.png'
+              alt=''
+              width={1210}
+              height={870}
+            />
+          </a>
+        </div>
+        <div className='flex text-center text-2xl bg-opacity-10 border-0 rounded-xl bg-sky-500 p-5 mb-10 max-w-[60vw] maxSm:ml-[15vw] mx-[15vw] mt-10 text-sky-900'>
+          This is an interactive mockup that outlines the general features and flow of using this type of social media application. It shows typical features such
+          as top charts, different generes, and a page to discover new artists. The most important feature that this mockup describes is the ability to obtain a market 
+          value and display it to the public. This makes your likeness a publically traded entity rather than being subject to the many different record/music labels
+          that have created so many horror stories is the past. 
         </div>
       </div>
-      <hr className='border-sky-900 border-[1px] rounded-xl w-[80vw] mx-[10vw] '/>
-      <div className='relative flex flex-col items-center bg-white z-1'>
-        <div className='relative flex items-center justify-center w-full py-10 text-6xl font-bold bg-white text-sky-900 z-1'>Under the hood</div>
-        <div className='text-sky-900 max-w-[75vw] text-xl border-2 border-sky-900 rounded-xl p-[3rem] bg-sky-100'>
-        With the implementation of a Central Bank Digital Currency (CBDC) from the Federal Reserve (Fed) the government understands that a digital market is on the horizon. 
-        Social media has become more of a business enterprise than staying in touch with friends. Social media influencers, artists, movies, tv shows, and athletes are allowing 
-        fans to fund projects with GoFundMe to stock options in the Green Bay Packers. Influencer marketing is now a $2.5 trillion industry, up $400 billion three years ago. 
-        This influencer market has grown on average 146% for the past five years. The entertainment industry is growing annually by 13%. Top creators like Taylor Swift have had 
-        multiple controversies regarding the power of record labels. People want a way to help their favorite entertainers create content. With the entertainment market in a huge 
-        boom due to COVID-19, the multiple controversies with labels taking power away from creators, and alternative investments explosion Sole Industries “The Social Market” 
-        is in the perfect position for filling the market need. 
-        <ul className='my-2'>
-            <li>
-            On Jun 23, 2022, Federal Reserve Chair Powell stated the “Federal Reserve understand the time of a digital market is coming and it’s coming quick.” 
-            This indicates a strong shift dynamic shift to a more digital market within 5-10 years.  
-            </li>
-            <li>
-            On Jun 23, 2022, Chairwomen Waters & the FED recognized the importance a need to decrease volatility of the cryptocurrency market. 
-            The Social Market does exactly that but giving a purpose for CBDC on a custom market
-            </li>
-          </ul>
-          <div className='flex justify-evenly'>
-            <a href='https://www.federalreserve.gov/newsevents/speech/powell20220617a.htm'>
-              <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
-              transition ease-in-out delay-150'>
-                <Image
-                    src={'/powell934-717.png'}
-                    alt=''
-                    width={535}
-                    height={412}
-                />
-              </div>
-            </a>
-            <a href='https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=408969'>
-              <div className='border rounded-2xl border-slate-700 my-[2rem] mx-5 overflow-hidden filter hue-rotate-60 blur-sm hover:hue-rotate-0 hover:blur-0
-              transition ease-in-out delay-150'>
-                <Image
-                    src={'/watersLg.png'}
-                    alt=''
-                    width={535}
-                    height={412}
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
+      <PageFooter/>
     </div>
+    
   )
 }
 
